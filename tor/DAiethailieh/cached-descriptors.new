@@ -1,0 +1,51 @@
+router DAiethailieh 172.18.0.4 7000 0 9030
+identity-ed25519
+-----BEGIN ED25519 CERT-----
+AQQAB3uIAZpiMBtAu/Kv9lPyokYcleru01/H55BbXIJHIs6S/epUAQAgBAD5pFqP
+nhYEmPWxfFSMHQAKOkQvpKDNIjbjbySKMcVwjaQLn09low+OsjOim7KFKLwerAUt
+CAuH+wTCA3rqzhkbwUZrL0rzZnrTBevPc/7IXA3+c81T0lYKFrh2jhojUgk=
+-----END ED25519 CERT-----
+master-key-ed25519 +aRaj54WBJj1sXxUjB0ACjpEL6SgzSI2428kijHFcI0
+platform Tor 0.3.4.6-rc-dev on Linux
+proto Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+published 2025-11-10 07:58:15
+fingerprint AC58 F3AF ADFD D261 4C24 1E04 FEA6 885D 6EE1 1D7A
+uptime 0
+bandwidth 1073741824 1073741824 0
+extra-info-digest 6B51326E643F98EBE612F4CCA0453E2886B7B4BB hHcILDbJ86SQPlU51w6YpVUcT56dmoisx1jabE47o1c
+caches-extra-info
+onion-key
+-----BEGIN RSA PUBLIC KEY-----
+MIGJAoGBAK6WjsplVS38QayppmBH9A83lFWLTmXdFV0JeiXbunL5mOCgFVNk4QRa
+cuX5ZqKaxktgiawznPhzJ9sKyh0iwjI2Y1e+ZREels8EhmGXq4CoyN0uYrrI1RPK
+ULhcNnFHJzOW3i7wpFk8wjlYuPfBJViF5F9vY/wISRY4mT0rpesvAgMBAAE=
+-----END RSA PUBLIC KEY-----
+signing-key
+-----BEGIN RSA PUBLIC KEY-----
+MIGJAoGBANm/vOmD2nd5LXeau0shLylUtgyWhcKPmvA7vJYiJhiCLhXsVZOEVEQ4
+YCj6fiqc+x5zk6yOJOHVaSDRhTuqh/cqrMi7Dk/nv5K6+9gqpvHzSyHNG5fa0Afj
+3KfUfQADaRYMbOjUU4qdUWqteK6tUpybNIU/5szywkFMzqdAFUXJAgMBAAE=
+-----END RSA PUBLIC KEY-----
+onion-key-crosscert
+-----BEGIN CROSSCERT-----
+Yi/57breFjKiwQNzesZX45ok/pUerBdinbl5DnENuqPNvaMpd6vYFjeSk2sKuNvR
+pTkTlORMkAfsVmtZuIkkfEUvakDckaHxqr2MjigVffI42ZCnWlS81DmSPx3GA5Mf
+mntDuO6s3nIEJQYCTjHUxhczGY2+LYvQtzIKdKfImqY=
+-----END CROSSCERT-----
+ntor-onion-key-crosscert 0
+-----BEGIN ED25519 CERT-----
+AQoAB3tYAfmkWo+eFgSY9bF8VIwdAAo6RC+koM0iNuNvJIoxxXCNALb2EHKK7zzv
+rphKzVYPZRIwFgi36c0Iu6pdEjCsIfxVcSc23zbDq5GNHU0wvKNq4dzn0+E7Ac16
+Ks99D4POnws=
+-----END ED25519 CERT-----
+hidden-service-dir
+ntor-onion-key tGwazQkC5Tg8BruML/Mcta/nonXPe2K8J6hApODqSA4=
+accept *:*
+tunnelled-dir-server
+router-sig-ed25519 Cokm+8e2bEDfQTogKzCRqWWcqCBHxG2JDWYfPv9JFaAh1NJ/1KD1SHrY5RkQWmdVMPzNmDOxWdTlAo4Al5PNBA
+router-signature
+-----BEGIN SIGNATURE-----
+rqmFsz6f00wWqWUiYZmzc0yl235jMCm5kA3kHRJcQ3CxPeCNV1CThMgoxiY9kAoj
+IJeTY/jjc4HDelNhGcx0x/YemcGn8EoQKeLU+M+GRAIjewpiH0EWw8p/WFfKJSjy
+0ubf5KIMqqIV1ZEFJylm+HgXaQw3udu5kggq390Ljf0=
+-----END SIGNATURE-----

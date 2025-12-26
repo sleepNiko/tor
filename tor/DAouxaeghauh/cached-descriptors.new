@@ -1,0 +1,51 @@
+router DAouxaeghauh 172.18.0.2 7000 0 9030
+identity-ed25519
+-----BEGIN ED25519 CERT-----
+AQQAB3uIATC4ooCCuEbXivcNLK8IuNDqPkucaJLqB2NN9km89HSQAQAgBADgVhX6
+fPCmqdreIu0jfHWwVrVBxr7XlGqvGrOxdjd/eNgCnFMk+9qs86w++/tPdLO+6crK
+h8bR3p6P9iP71qr450S5ZEE8tjDdfqakc7NpvYgrQUXqBjrBDuUDHnAYzAA=
+-----END ED25519 CERT-----
+master-key-ed25519 4FYV+nzwpqna3iLtI3x1sFa1Qca+15RqrxqzsXY3f3g
+platform Tor 0.3.4.6-rc-dev on Linux
+proto Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+published 2025-11-10 07:58:15
+fingerprint E30F 09FF 525B B787 8365 ACCE 9CF7 BD16 AD34 550F
+uptime 0
+bandwidth 1073741824 1073741824 0
+extra-info-digest 38FC9E39B8CA0244D0215E4C1DA3980889D9228C 2zfU4VK2HjS7KROvj3//nGH/3ujtIkwTVgAMk7k3AGQ
+caches-extra-info
+onion-key
+-----BEGIN RSA PUBLIC KEY-----
+MIGJAoGBAN3R3Ay/PCtGC+pTPGNQsebhn2bHD68vonEWstpXH3Ll/ayGjylDDDc2
+C0rEKrdZLRiv1PesgAcJSN0N5L2BMShtjFQJmIN/CKSBszmVDQSIjbpQmLUyjFoc
+f7SnLtL4Pt8hYDC+08x+o4aqszJRJvg9r9dISqsyTn2g8fm7sbSJAgMBAAE=
+-----END RSA PUBLIC KEY-----
+signing-key
+-----BEGIN RSA PUBLIC KEY-----
+MIGJAoGBALf9NvQiwGLSwfpAE+HDVeXSwxE6mZQAnyFBkUjtIq+yo56b/j1nbgV1
+LTULyyYiorQrYkrb7oFnoYRYXVxDugkMXAdrE51t0K9thLE4B5zoB5wqtZdiqGPR
+8shz+kRUwEsJGCFfD2RpxUVTmGX0+RLFliDuoDjS7pB7uChBsET5AgMBAAE=
+-----END RSA PUBLIC KEY-----
+onion-key-crosscert
+-----BEGIN CROSSCERT-----
+t597Fc8Q1UazOmvaIZSKI86QCCAwiv9oP551dte8JpVDVrvO3yiKP3VPy2+b4jBd
+Bafj+ZSB7wbqEYpKUC8uIHVcaxSE3UkkfcXF68TlnZ0MpCnrWfIee4X2v8mckBfu
+zFXiV+b9tj8SvJKeAIq4p/cjKZq22q2zvJxfu9uSwK8=
+-----END CROSSCERT-----
+ntor-onion-key-crosscert 0
+-----BEGIN ED25519 CERT-----
+AQoAB3tYAeBWFfp88Kap2t4i7SN8dbBWtUHGvteUaq8as7F2N394AMkyCKTVBhlW
+YqodymbpQAd411+ht3YOkd4p7KGhRvV78J9AMJGCgLyuAdj+xgKn7RTgt5r1wQR/
+rRy6Kz+dzg0=
+-----END ED25519 CERT-----
+hidden-service-dir
+ntor-onion-key kC5exrayYIO24ERnnzUyJAWAEAUc17RneRHLVCaBhDE=
+accept *:*
+tunnelled-dir-server
+router-sig-ed25519 RJHCFd9XYbGE2vbpasAzlNpyt+6AWBuB/SPHSW/His5CBSi6MrVloIcT1CudSvoY+DOnnKc24Vf50BjwbgsnDw
+router-signature
+-----BEGIN SIGNATURE-----
+MfaQ41UMG6vmBB4JCE+c1gwBqzQA7bj/yN3WLZzzqwPF/vJ2jWZcvb5WP1TuOmLg
+gWBxpYBC4z5DCULvY9EhYNoLMemMkfQkc2qGhFlnvkASOldh8RA3U1+/Zy0F/UUy
+ScDniv+sUri9tTt7wSFfPyTAv5fGxE6Nu7KZ/Iq5+WA=
+-----END SIGNATURE-----

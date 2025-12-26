@@ -1,0 +1,22 @@
+# Tor state file last generated on 2025-11-10 07:58:15 local time
+# Other times below are in UTC
+# You *do not* need to edit this file.
+
+BWHistoryReadEnds 2025-11-11 07:58:14
+BWHistoryReadInterval 86400
+BWHistoryReadValues 0
+BWHistoryReadMaxima 0
+BWHistoryWriteEnds 2025-11-11 07:58:14
+BWHistoryWriteInterval 86400
+BWHistoryWriteValues 0
+BWHistoryWriteMaxima 0
+BWHistoryDirReadEnds 2025-11-11 07:58:14
+BWHistoryDirReadInterval 86400
+BWHistoryDirReadValues 0
+BWHistoryDirReadMaxima 0
+BWHistoryDirWriteEnds 2025-11-11 07:58:14
+BWHistoryDirWriteInterval 86400
+BWHistoryDirWriteValues 0
+BWHistoryDirWriteMaxima 0
+TorVersion Tor 0.3.4.6-rc-dev (git-71e563f268a0bae3)
+LastWritten 2025-11-10 07:58:15

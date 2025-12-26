@@ -13,7 +13,7 @@
 #   
 #   docker run --rm -it -e ROLE=DA antitree/tor-server /bin/bash
 
-FROM debian:jessie
+FROM debian:bullseye-slim
 MAINTAINER Antitree antitree@protonmail.com
 
 # Sets which version of tor to use. See the Tor Projects git page for available tags
@@ -38,8 +38,8 @@ ENV TERM=xterm \
 RUN apt-get update && \
     build_temps="build-essential automake" && \ 
     build_deps="libssl-dev zlib1g-dev libevent-dev ca-certificates\
-        dh-apparmor libseccomp-dev dh-systemd \
-        git" && \
+          dh-apparmor libseccomp-dev \
+          iproute2 git" && \
     DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install $build_deps $build_temps \
         init-system-helpers \
         pwgen && \
