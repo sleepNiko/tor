@@ -1,18 +1,18 @@
-# Tor state file last generated on 2026-01-01 10:21:15 local time
+# Tor state file last generated on 2026-01-01 10:23:19 local time
 # Other times below are in UTC
 # You *do not* need to edit this file.
 
 BWHistoryReadEnds 2026-01-02 09:45:46
 BWHistoryReadInterval 86400
-BWHistoryReadValues 3158016
+BWHistoryReadValues 3222528
 BWHistoryReadMaxima 144384
 BWHistoryWriteEnds 2026-01-02 09:45:46
 BWHistoryWriteInterval 86400
-BWHistoryWriteValues 3147776
+BWHistoryWriteValues 3216384
 BWHistoryWriteMaxima 144384
 BWHistoryDirReadEnds 2026-01-02 09:45:46
 BWHistoryDirReadInterval 86400
-BWHistoryDirReadValues 120832
+BWHistoryDirReadValues 128000
 BWHistoryDirReadMaxima 0
 BWHistoryDirWriteEnds 2026-01-02 09:45:46
 BWHistoryDirWriteInterval 86400
@@ -24,7 +24,7 @@ Guard in=default rsa_id=D632633EE9EE5E9990BD4B22EB86BAA574BEF7A7 nickname=DAohpo
 Guard in=default rsa_id=F5460547D56F984E815A6BA01D2092D26DB2AC86 nickname=DAejeiquahti sampled_on=2025-12-25T03:55:12 sampled_by=0.3.4.11-dev listed=1
 TorVersion Tor 0.3.4.11-dev (git-a521c427883697fc)
 LastRotatedOnionKey 2026-01-01 09:45:46
-LastWritten 2026-01-01 10:21:15
+LastWritten 2026-01-01 10:23:19
 TotalBuildTimes 100
 CircuitBuildTimeBin 25 50
 CircuitBuildTimeBin 75 50

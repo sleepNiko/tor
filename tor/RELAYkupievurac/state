@@ -1,30 +1,30 @@
-# Tor state file last generated on 2026-01-01 10:21:15 local time
+# Tor state file last generated on 2026-01-01 10:23:19 local time
 # Other times below are in UTC
 # You *do not* need to edit this file.
 
 BWHistoryReadEnds 2026-01-02 09:45:46
 BWHistoryReadInterval 86400
-BWHistoryReadValues 5961728
+BWHistoryReadValues 5990400
 BWHistoryReadMaxima 196608
 BWHistoryWriteEnds 2026-01-02 09:45:46
 BWHistoryWriteInterval 86400
-BWHistoryWriteValues 5905408
+BWHistoryWriteValues 5926912
 BWHistoryWriteMaxima 196608
 BWHistoryDirReadEnds 2026-01-02 09:45:46
 BWHistoryDirReadInterval 86400
-BWHistoryDirReadValues 121856
+BWHistoryDirReadValues 128000
 BWHistoryDirReadMaxima 0
 BWHistoryDirWriteEnds 2026-01-02 09:45:46
 BWHistoryDirWriteInterval 86400
 BWHistoryDirWriteValues 8192
 BWHistoryDirWriteMaxima 0
-Guard in=default rsa_id=A22CDB8772D40C95E61565152C2AA4A36EC8A4C7 nickname=EXITbiephoosor sampled_on=2025-12-26T15:13:05 sampled_by=0.3.4.11-dev listed=1 confirmed_on=2025-12-26T05:52:47 confirmed_idx=0 pb_circ_attempts=66.000000 pb_circ_successes=66.000000 pb_successful_circuits_closed=66.000000
+Guard in=default rsa_id=A22CDB8772D40C95E61565152C2AA4A36EC8A4C7 nickname=EXITbiephoosor sampled_on=2025-12-26T15:13:05 sampled_by=0.3.4.11-dev listed=1 confirmed_on=2025-12-26T05:52:47 confirmed_idx=0 pb_circ_attempts=69.000000 pb_circ_successes=69.000000 pb_successful_circuits_closed=69.000000
 Guard in=default rsa_id=F5460547D56F984E815A6BA01D2092D26DB2AC86 nickname=DAejeiquahti sampled_on=2025-12-29T16:21:41 sampled_by=0.3.4.11-dev listed=1
-Guard in=default rsa_id=FD2CF42CF8F0B45AD6D62F2DC4DBEF933BE6E6D7 nickname=DAusaileshee sampled_on=2025-12-29T18:49:06 sampled_by=0.3.4.11-dev listed=1 confirmed_on=2025-12-21T09:57:19 confirmed_idx=1 pb_circ_attempts=30.000000 pb_circ_successes=30.000000 pb_successful_circuits_closed=30.000000
+Guard in=default rsa_id=FD2CF42CF8F0B45AD6D62F2DC4DBEF933BE6E6D7 nickname=DAusaileshee sampled_on=2025-12-29T18:49:06 sampled_by=0.3.4.11-dev listed=1 confirmed_on=2025-12-21T09:57:19 confirmed_idx=1 pb_circ_attempts=31.000000 pb_circ_successes=31.000000 pb_successful_circuits_closed=31.000000
 Guard in=default rsa_id=D632633EE9EE5E9990BD4B22EB86BAA574BEF7A7 nickname=DAohpooloosi sampled_on=2025-12-27T15:04:15 sampled_by=0.3.4.11-dev listed=1
 TorVersion Tor 0.3.4.11-dev (git-a521c427883697fc)
 LastRotatedOnionKey 2026-01-01 09:45:46
-LastWritten 2026-01-01 10:21:15
-TotalBuildTimes 100
-CircuitBuildTimeBin 25 62
-CircuitBuildTimeBin 75 38
+LastWritten 2026-01-01 10:23:19
+TotalBuildTimes 104
+CircuitBuildTimeBin 25 64
+CircuitBuildTimeBin 75 40
