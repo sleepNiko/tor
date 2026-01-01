@@ -1,0 +1,120 @@
+# macOS 下基于 Docker 的匿名网络实现报告
+
+## 1. 摘要
+
+本报告详细阐述了如何在 macOS 环境下（兼容 Intel 及 Apple Silicon M1/M2/M3 芯片）利用 Docker 容器技术构建一个私有的、完全可控的 Tor 匿名网络。报告涵盖了从底层镜像构建、节点角色配置到网络编排的完整实现流程，并特别针对 macOS 系统的兼容性问题（如 ARM64 架构下的沙盒机制）提供了解决方案。
+
+## 2. 项目背景与目标
+
+在大数据与网络监控日益普遍的今天，研究匿名网络技术对于隐私保护和网络安全具有重要意义。本项目旨在本地环境中快速部署一个包含目录服务器（Directory Authority）、中继节点（Relay）、出口节点（Exit）和客户端（Client）的完整 Tor 网络拓扑，用于研究、测试或教学目的。
+
+**核心目标：**
+*   **跨平台兼容**：确保在 macOS 及其它主流操作系统上通过 Docker 无缝运行。
+*   **快速部署**：通过 Docker Compose 实现一键启动整个网络集群。
+*   **完全隔离**：利用容器技术将网络节点与宿主机环境隔离，提高安全性。
+
+## 3. 系统架构设计
+
+本系统采用多容器编排架构，通过 Docker Compose 管理以下服务组件：
+
+1.  **目录授权节点 (DA, Directory Authority)**：
+    *   **角色**：网络的“大脑”，负责维护网络拓扑图，告知客户端有哪些节点可用。
+    *   **配置**：本项目配置了 3 个 DA 节点 (`da1`, `da2`, `da3`) 以确保共识机制的稳定性。
+    *   **特性**：配置了加速投票参数，将网络启动时间从数小时缩短至几分钟。
+
+2.  **中继节点 (Relay)**：
+    *   **角色**：负责在网络中转发加密流量，混淆流量来源。
+    *   **服务名**：`relay`
+
+3.  **出口节点 (Exit)**：
+    *   **角色**：流量离开匿名网络进入公共互联网的最后一跳。
+    *   **服务名**：`exit`
+
+4.  **客户端节点 (Client)**：
+    *   **角色**：SOCKS5 代理入口，本地应用程序（如浏览器）通过此节点接入匿名网络。
+    *   **端口映射**：宿主机 `9050` (SOCKS) 和 `9051` (控制端口)。
+
+5.  **隐藏服务 (Hidden Service)**：
+    *   **角色**：运行在匿名网络内部的 Web 服务（Nginx），仅通过 `.onion` 地址访问。
+    *   **服务名**：`hs` 和 `web`。
+
+## 4. 关键实现技术
+
+### 4.1 容器镜像构建 (Dockerfile)
+
+基础镜像选用 `debian:bullseye-slim` 以平衡稳定性与镜像体积。构建过程并非简单安装预编译包，而是从 Tor 官方源码编译，主要步骤如下：
+
+1.  **环境准备**：安装 `build-essential`, `libssl-dev`, `libevent-dev` 等编译依赖。
+2.  **源码获取**：克隆 `torproject.org` 官方 Git 仓库。
+3.  **编译安装**：执行 `./autogen.sh`, `./configure`, `make`, `make install` 标准编译流程。
+4.  **清理优化**：编译完成后卸载构建工具并清理缓存，减小镜像体积。
+
+### 4.2 macOS (Apple Silicon) 兼容性适配
+
+在 [scripts/docker-entrypoint](file:///c:/Users/ASUS/Desktop/tor-main/scripts/docker-entrypoint) 启动脚本中，加入了针对 macOS (尤其是 M1/M2/M3 芯片) 的关键适配逻辑：
+
+```bash
+# 修正 ARM64 架构下的沙盒兼容性问题
+echo "Applying arm64 fix: Disabling Sandbox in /etc/tor/torrc..."
+sed -i 's/Sandbox 1/Sandbox 0/g' /etc/tor/torrc
+```
+
+**原理解析**：Tor 默认启用的 `Sandbox` 安全机制依赖于特定的内核功能，这在 Docker 虚拟化的 ARM64 Linux 内核中可能导致进程崩溃。禁用沙盒是确保在新款 Mac 上稳定运行的关键。
+
+### 4.3 自动化网络编排
+
+使用 [docker-compose.yml](file:///c:/Users/ASUS/Desktop/tor-main/docker-compose.yml) 定义服务依赖与网络拓扑：
+
+*   **Host Gateway 映射**：使用 `extra_hosts: - "host.docker.internal:host-gateway"` 方便容器与宿主机通信。
+*   **依赖管理**：通过 `depends_on` 确保 DA 节点先于其他节点启动，保证网络共识能够顺利建立。
+*   **共享存储**：所有节点挂载 `./tor` 目录，用于共享密钥与指纹信息，模拟分布式的目录同步。
+
+## 5. 部署与配置指南
+
+### 5.1 环境准备
+*   **macOS 系统** (支持 Intel 或 Apple Silicon)
+*   **Docker Desktop for Mac** (需处于 Running 状态)
+
+### 5.2 目录结构
+项目根目录 `tor-private-net` 结构如下：
+```text
+├── Dockerfile           # 镜像构建文件
+├── docker-compose.yml   # 编排文件
+├── config/              # 配置文件目录
+│   └── torrc.da         # DA 节点配置
+└── scripts/             # 脚本目录
+    ├── docker-entrypoint # 启动脚本（含 Mac 适配）
+    └── da_fingerprint    # 指纹提取脚本
+```
+
+### 5.3 启动步骤
+在终端 (Terminal) 中进入项目目录，执行：
+
+```bash
+docker-compose up --build
+```
+
+系统将自动构建镜像并启动所有节点。初次启动需要几分钟进行编译。
+
+## 6. 测试与验证
+
+### 6.1 验证网络连通性
+观察终端日志，当 `client` 服务输出以下信息时，表示自举完成：
+```text
+client_1 | [notice] Bootstrapped 100%: Done
+```
+
+### 6.2 客户端连接测试
+配置浏览器（推荐 Firefox 或 Chrome + SwitchyOmega）：
+*   **代理协议**：SOCKS5
+*   **地址**：127.0.0.1
+*   **端口**：9050
+
+### 6.3 访问隐藏服务
+1.  在终端日志中查找 `hs` 服务生成的 `.onion` 域名。
+2.  在配置好代理的浏览器中访问该域名。
+3.  预期结果：看到 "Welcome to nginx!" 页面，证明成功通过私有 Tor 网络访问了内部服务。
+
+## 7. 结论
+
+通过 Docker 容器化技术，我们成功在 macOS 平台上屏蔽了底层架构差异，构建了一个功能完备的私有 Tor 匿名网络。该方案不仅实施成本低、可移植性强，而且通过配置文件优化大幅缩短了私有网络的冷启动时间，非常适合作为网络安全研究与隐私保护技术的实验平台。

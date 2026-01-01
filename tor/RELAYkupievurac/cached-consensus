@@ -1,0 +1,82 @@
+network-status-version 3
+vote-status consensus
+consensus-method 28
+valid-after 2026-01-01 10:15:00
+fresh-until 2026-01-01 10:20:00
+valid-until 2026-01-01 10:25:00
+voting-delay 5 5
+client-versions 
+server-versions 
+known-flags Authority Exit Fast Guard HSDir NoEdConsensus Running Stable V2Dir Valid
+recommended-client-protocols Cons=1-2 Desc=1-2 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=4 Microdesc=1-2 Relay=2
+recommended-relay-protocols Cons=1-2 Desc=1-2 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=4 Microdesc=1-2 Relay=2
+required-client-protocols Cons=1-2 Desc=1-2 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=4 Microdesc=1-2 Relay=2
+required-relay-protocols Cons=1 Desc=1 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=3-4 Microdesc=1 Relay=1-2
+dir-source DAejeiquahti 7748C0F8319AA6F0C54E0C60CAF0625C21E7B185 172.18.0.3 172.18.0.3 9030 7000
+contact (none)
+vote-digest C1252901CB676A4CA813ADC0E9519C3821E620A0
+dir-source DAusaileshee 9C570C13D7E56FDF4BFE1E0384496E0B54D8FBB2 172.18.0.4 172.18.0.4 9030 7000
+contact (none)
+vote-digest DC9D7D992952E6387B07D0CA5F6AA91FA2FD1698
+dir-source DAohpooloosi F2A4B10EA7646A5954CB7160433D094FABDD243B 172.18.0.2 172.18.0.2 9030 7000
+contact (none)
+vote-digest 29837B830DC11C98CB6B8937566EF1700A73CBFA
+r EXITbiephoosor oizbh3LUDJXmFWUVLCqko27IpMc d5ZjnwqHpq+/YBvwvr+P644PHMc 2026-01-01 09:45:47 172.18.0.7 7000 9030
+s Exit Fast Guard HSDir Running Stable V2Dir Valid
+v Tor 0.3.4.11-dev
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Unmeasured=1
+p accept 1-65535
+r DAohpooloosi 1jJjPunuXpmQvUsi64a6pXS+96c TRDR8MbKVt+gsqUe2CLIJyoY2Ww 2026-01-01 09:45:51 172.18.0.2 7000 9030
+s Authority Exit Fast Guard HSDir Running Stable V2Dir Valid
+v Tor 0.3.4.11-dev
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Unmeasured=1
+p accept 1-65535
+r RELAYkupievurac 6zO5LlNrgMW40fCZSzPXSQ/LqBA Pri9qHSScAVUicklkQXGIb65F1M 2026-01-01 09:45:46 172.18.0.6 7000 9030
+s Exit Fast Guard HSDir Running Stable V2Dir Valid
+v Tor 0.3.4.11-dev
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Unmeasured=1
+p reject 25,119,135-139,445,563,1214,4661-4666,6346-6429,6699,6881-6999
+r DAejeiquahti 9UYFR9VvmE6BWmugHSCS0m2yrIY DgSUHEVihJmlHofN+v7jaOaHSms 2026-01-01 09:45:49 172.18.0.3 7000 9030
+s Authority Exit Fast Guard HSDir Running Stable V2Dir Valid
+v Tor 0.3.4.11-dev
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Unmeasured=1
+p accept 1-65535
+r DAusaileshee /Sz0LPjwtFrW1i8txNvvkzvm5tc E1jlL9xx5gTsnbKRrj4Tu0UVYmA 2026-01-01 09:45:48 172.18.0.4 7000 9030
+s Authority Exit Fast Guard HSDir Running Stable V2Dir Valid
+v Tor 0.3.4.11-dev
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Unmeasured=1
+p accept 1-65535
+directory-footer
+bandwidth-weights Wbd=3333 Wbe=0 Wbg=0 Wbm=10000 Wdb=10000 Web=10000 Wed=3333 Wee=10000 Weg=3333 Wem=10000 Wgb=10000 Wgd=3333 Wgg=10000 Wgm=10000 Wmb=10000 Wmd=3333 Wme=0 Wmg=0 Wmm=10000
+directory-signature 7748C0F8319AA6F0C54E0C60CAF0625C21E7B185 8165912BA2C0F665D9F89C016A5901D8B8D5E24E
+-----BEGIN SIGNATURE-----
+FLI3xexgdOYqPzMP3hYXoBf6ELuWD5vold00fQMsfuM5iC2yM0YjKA7UcCMxaT3h
+UcUkEWdHHSOSHjuzcsY898iOtvvqq6KoMYlIp4sRPGGIkD2SlyF9x5WdpGkfF3tk
+yM1YP9tBc9yotVYeRVPcbMgr2XgDbimMIOkbxjg6ktb12df8gzbCjjD12JCSCw8o
+uVYwCWMaLIk28pQVlcRi48fPSGOq3PlKBTfYY5Db5aJQP4STAPaLIKFYC++8lwG2
+8rUU+DGNg1DnPi8aNVO23zr6QHvA5md1iIVMHcYn64idlb+paFQqHWWD5estbFkl
+Sq4u3ulDWry4voOchzwwdw==
+-----END SIGNATURE-----
+directory-signature 9C570C13D7E56FDF4BFE1E0384496E0B54D8FBB2 8CCB5BE0D57299974CD8F4EEBAAEF60E0D77B5D0
+-----BEGIN SIGNATURE-----
+iIjYrevGgqx+NN/KgZONM91ei69P5pHGckJmWuPqQGeIaiBy4p1OQ4yZP4hQUfUB
+r3rZOed/y/qJhMEVGsluGRFEPjrKSC19Ul4xhHykq4bEORP4oMUxi1Z+7YVzB0Jy
+wZAhiqAOC1RG8j4OIF+SZOFSc9DHwhI4V7LTi5GSlnLkIL3gLB6opobQUg2pcnpd
+P/XwPdduKxMGck3dkhbBj/XYulI9xox7LVXtyqaMBid+2GABcAx2Veure+HsPyKa
+dHpievh3QzhlvmGfwj7yYGIrynVrHOtBFDZMh+/VzStyvVp38kmkfT1iUywpTpZn
+pivk27lj/eXNDFRV09YSNg==
+-----END SIGNATURE-----
+directory-signature F2A4B10EA7646A5954CB7160433D094FABDD243B 73EC537471D2290CA6117459A346260479A86F8E
+-----BEGIN SIGNATURE-----
+gv5hvDEunRJJKVbV1js5/q2Y4THVckehqx4xCyvaVr01E/IpUbWLuee3Fjn056r4
+egaN2vU74dV24C52hoLIxAtvBS1dQMAnRhjYFMTrWClkvvEG0HOHg6ZxWpN+0h1H
+ZayPeiYp4QrzuSqWIEmLPi42YoSpgzjPAK7niPjwMM6S0NAJPyv1cOD0bvdKCROV
+hyDfcsNbLPdHu5UKRkTdoI5EpLcR9NQupEFhdXbwhaPyMaXjJX4AVttYYBtAylTY
++lErsBSGadcBqXctbboEAJWlR166iU43MPlkyUPoi4/A7QFbVOShSDiYnuytVOjW
+RjVuxQQSD8tOlGmafF7Dxw==
+-----END SIGNATURE-----

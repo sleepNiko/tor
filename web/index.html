@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Secure IoT Dashboard</title>
+<style>
+    body { font-family: 'Courier New', Courier, monospace; background-color: #000; color: #00ff00; padding: 50px; text-align: center; }
+    .status-box { border: 2px solid #00ff00; padding: 20px; display: inline-block; margin-top: 20px; border-radius: 10px; box-shadow: 0 0 10px #00ff00; }
+    h1 { text-shadow: 0 0 5px #00ff00; }
+    .blink { animation: blinker 1s linear infinite; }
+    @keyframes blinker { 50% { opacity: 0; } }
+</style>
+</head>
+<body>
+<h1>🔐 Secure IoT Gateway</h1>
+<div class="status-box">
+    <p>Device Status: <strong class="blink">ONLINE</strong></p>
+    <p>Connection: <strong>Tor Hidden Service (V3)</strong></p>
+    <p>Public IP: <strong>HIDDEN</strong></p>
+    <p>Firewall: <strong>ACTIVE</strong></p>
+    <hr style="border-color: #00ff00;"/>
+    <p>Camera Feed: <strong>[ENCRYPTED STREAM]</strong></p>
+    <p>Door Lock: <strong>LOCKED</strong></p>
+</div>
+</body>
+</html>

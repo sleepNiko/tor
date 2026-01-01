@@ -1,0 +1,15 @@
+# Tor state file last generated on 2026-01-01 10:19:41 local time
+# Other times below are in UTC
+# You *do not* need to edit this file.
+
+Guard in=default rsa_id=A22CDB8772D40C95E61565152C2AA4A36EC8A4C7 nickname=EXITbiephoosor sampled_on=2025-12-27T23:43:02 sampled_by=0.3.4.11-dev listed=1
+Guard in=default rsa_id=F5460547D56F984E815A6BA01D2092D26DB2AC86 nickname=DAejeiquahti sampled_on=2025-12-20T16:07:00 sampled_by=0.3.4.11-dev listed=1 confirmed_on=2025-12-23T23:15:32 confirmed_idx=2
+Guard in=default rsa_id=D632633EE9EE5E9990BD4B22EB86BAA574BEF7A7 nickname=DAohpooloosi sampled_on=2025-12-22T10:34:45 sampled_by=0.3.4.11-dev listed=1 confirmed_on=2025-12-31T23:50:53 confirmed_idx=0 pb_use_attempts=5.000000 pb_use_successes=5.000000 pb_circ_attempts=75.000000 pb_circ_successes=75.000000 pb_successful_circuits_closed=75.000000
+Guard in=default rsa_id=FD2CF42CF8F0B45AD6D62F2DC4DBEF933BE6E6D7 nickname=DAusaileshee sampled_on=2025-12-23T19:15:52 sampled_by=0.3.4.11-dev listed=1 confirmed_on=2025-12-30T22:45:22 confirmed_idx=1 pb_use_attempts=2.000000 pb_use_successes=2.000000 pb_circ_attempts=27.000000 pb_circ_successes=27.000000 pb_successful_circuits_closed=27.000000
+Guard in=default rsa_id=EB33B92E536B80C5B8D1F0994B33D7490FCBA810 nickname=RELAYkupievurac sampled_on=2025-12-23T07:09:52 sampled_by=0.3.4.11-dev listed=1
+TorVersion Tor 0.3.4.11-dev (git-a521c427883697fc)
+LastWritten 2026-01-01 10:19:41
+TotalBuildTimes 105
+CircuitBuildTimeBin 25 61
+CircuitBuildTimeBin 75 43
+CircuitBuildTimeBin 125 1
